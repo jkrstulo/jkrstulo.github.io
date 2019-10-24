@@ -137,6 +137,34 @@ div.active_page > a {
     width: 350px;
 }
 
+#radovi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+div.rad-thumb {
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin: 10px;
+    box-shadow: 0px 0px 20px 11px #EAE8E8;
+}
+
+img.rad-thumb {
+    box-shadow: 0px 0px 20px 11px #EAE8E8;
+}
+
+div.rad-thumb:hover {
+    box-shadow: 0px 0px 30px 11px #d2d0d0;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
 .normal-text {
     padding-top: 20px;
     padding-bottom: 10px;
