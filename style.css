@@ -176,17 +176,6 @@ div.active_page > a {
     align-items: flex-start;
 }
 
-div.rad-thumb {
-    flex-shrink: 1;
-    margin: 10px;
-    box-shadow: 0px 0px 20px 11px #EAE8E8;
-    height: 300px;
-}
-
-img.rad-thumb {
-    box-shadow: 0px 0px 20px 11px #EAE8E8;
-}
-
 div.rad-thumb:hover {
     box-shadow: 0px 0px 30px 11px #d2d0d0;
     margin-right: 5px;
@@ -194,6 +183,58 @@ div.rad-thumb:hover {
     margin-bottom: 15px;
     margin-left: 15px;
 }
+
+
+
+/* line 3, ../sass/style.scss */
+.rad-thumb {
+    flex-shrink: 1;
+    margin: 10px;
+    box-shadow: 0px 0px 20px 11px #EAE8E8;
+    height: 300px;
+    width: auto;
+    position: relative;
+}
+
+.rad-thumb img {
+  height: 300px;
+  width: auto;
+}
+
+.rad-thumb .overlay-desc {
+  background: var(--color-grey-300);
+  height: 30%;
+  width: 100%;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+}
+
+.rad-thumb .overlay-desc p {
+  color: var(--color-grey-900);
+  line-height: 50px;
+  text-align: center;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.rad-thumb:hover .overlay-desc {
+  opacity: .8;
+  transition: opacity .5s;
+}
+
+.rad-thumb:hover {
+    box-shadow: 0px 0px 30px 11px #d2d0d0;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+
 
 .normal-text {
     padding-top: 20px;
