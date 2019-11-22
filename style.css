@@ -123,6 +123,11 @@ div.active_page > a {
     box-shadow: 0px 0px 20px 11px #EAE8E8;
 }
 
+.fa fa-phone {
+    display: flex;
+    flex-direction: column;
+}
+
 .txt-fig {
     padding-left: 50px;
     padding-right: 50px;
@@ -267,5 +272,5 @@ div.active_page > a {
     box-shadow: 0px 0px 20px 11px #EAE8E8;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 500px;
+    width: 700px;
 }
